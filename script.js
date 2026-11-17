@@ -3,7 +3,7 @@ const addTaskButton = document.getElementById('addTaskButton');
 const taskList = document.getElementById('taskList');
 
 addTaskButton.addEventListener("click", function() {
-    const task = taskInput.value;
+    const task = taskInput.value.trim();
     if (task === "") {
         alert("Please enter a task.");
         return;
