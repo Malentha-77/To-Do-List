@@ -7,5 +7,6 @@ addTaskButton.addEventListener("click", function() {
     const li = document.createElement("li");
     li.textContent = task;
     taskList.appendChild(li);
+    taskInput.value = "";
     console.log(task);
 });
