@@ -4,6 +4,10 @@ const taskList = document.getElementById('taskList');
 
 addTaskButton.addEventListener("click", function() {
     const task = taskInput.value;
+    if (task === "") {
+        alert("Please enter a task.");
+        return;
+    }
     const li = document.createElement("li");
     li.textContent = task;
     taskList.appendChild(li);
